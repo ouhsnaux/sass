@@ -18,6 +18,4 @@
 
 ## 参考文献
 
-[Sass](https://sass-lang.com/documentation)
-
-<!-- TODO 插值，生成无引号字符串，meta.inspect添加引号，父选择器 -->
+[Sass官网](https://sass-lang.com/documentation)

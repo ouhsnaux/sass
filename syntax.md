@@ -1,10 +1,9 @@
 # `Sass` 之语法
 
-- [`Sass` 之语法](#sass-之语法)
-  - [`.scss` vs `.sass`](#scss-vs-sass)
-  - [`CSS` 超集](#css-超集)
-  - [不容错](#不容错)
-  - [注释](#注释)
+- [`.scss` vs `.sass`](#scss-vs-sass)
+- [`CSS` 超集](#css-超集)
+- [不容错](#不容错)
+- [注释](#注释)
 
 ## `.scss` vs `.sass`
 

@@ -1,22 +1,21 @@
 # 值类型
 
-- [值类型](#值类型)
-  - [Number](#number)
-    - [单位](#单位)
-    - [精度](#精度)
-  - [String](#string)
-    - [分类](#分类)
-    - [对比](#对比)
-  - [Color](#color)
-  - [Boolean](#boolean)
-  - [null](#null)
-  - [Function](#function)
-  - [list](#list)
-    - [语法](#语法)
-    - [常见操作](#常见操作)
-  - [map](#map)
-    - [语法](#语法-1)
-    - [常见操作](#常见操作-1)
+- [Number](#number)
+  - [单位](#单位)
+  - [精度](#精度)
+- [String](#string)
+  - [分类](#分类)
+  - [对比](#对比)
+- [Color](#color)
+- [Boolean](#boolean)
+- [null](#null)
+- [Function](#function)
+- [list](#list)
+  - [语法](#语法)
+  - [常见操作](#常见操作)
+- [map](#map)
+  - [语法](#语法-1)
+  - [常见操作](#常见操作-1)
 
 ## Number
 
@@ -104,7 +103,7 @@
 
 - `#` 开头，6位和8位16进制
 - 颜色保留字，`red` 等
-- `rgb,rgba,hsl,hsla`
+- `rgb, rgba, hsl, hsla`
 
 ## Boolean
 

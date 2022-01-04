@@ -19,7 +19,7 @@
     - [@forward](./at-rules/module/@forward.md)
     - [@import](./at-rules/module/@import.md)
     - [对比](./at-rules/module/comparison.md)
-  - [逻辑复用]
+  - 逻辑复用
     - [@mixin & @include](./at-rules/reuse/@mixin&include.md)
     - [@extend](./at-rules/reuse/@extend.md)
     - [@function](./at-rules/reuse/@function.md)

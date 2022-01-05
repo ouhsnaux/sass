@@ -1,23 +1,19 @@
 # flow-control
 
-- [flow-control](#flow-control)
-  - [truthiness & falsiness](#truthiness--falsiness)
-  - [逻辑判断](#逻辑判断)
-  - [循环](#循环)
-    - [@for](#for)
-    - [@while](#while)
-    - [@each](#each)
-      - [list](#list)
-      - [map](#map)
-      - [其他结构化数据](#其他结构化数据)
+- [逻辑值](#逻辑值)
+- [条件判断](#条件判断)
+- [循环](#循环)
+  - [@for](#for)
+  - [@while](#while)
+  - [@each](#each)
 
-## truthiness & falsiness
+## 逻辑值
 
-只有 `false` 和 `null` 判定为 `false`，其他值都是 `true`
+只有 `false` 和 `null` 为逻辑假，不能通过判断，其他值都是真。
 
-## 逻辑判断
+## 条件判断
 
-@if, @else, @else if
+`@if, @else, @else if`
 
 ## 循环
 
@@ -63,9 +59,8 @@ sup {
 
 用于遍历 `list` 和 `map` 及其他结构化数据
 
-#### list
-
 ```scss
+// list
 $sizes: 40px, 50px, 80px;
 
 @each $size in $sizes {
@@ -77,9 +72,8 @@ $sizes: 40px, 50px, 80px;
 }
 ```
 
-#### map
-
 ```scss
+// map
 $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
 
 @each $name, $glyph in $icons {
@@ -91,11 +85,9 @@ $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
 }
 ```
 
-#### 其他结构化数据
-
-根据位置关系解析，如果找不到数据会填充 `null`
-
 ```scss
+// 其它结构话数据
+// 根据位置关系解析，如果找不到数据会填充 `null`
 $icons:
   "eye" "\f112" 12px,
   "start" "\f12e" 16px,
@@ -110,4 +102,3 @@ $icons:
   }
 }
 ```
-

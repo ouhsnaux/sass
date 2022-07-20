@@ -28,7 +28,7 @@
   - [输出](./@rules/output.md)
   - [@at-root](./@rules/@at-root.md)
   - [CSS内置@rules](./@rules/css.md)
-- 内置功能
+- [内置功能](./build-in-modules.md)
 
 ## 参考文献
 

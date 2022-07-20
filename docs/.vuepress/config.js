@@ -40,7 +40,7 @@ module.exports = {
           '/@rules/css'
         ]
       },
-      
+      '/build-in-modules',
     ]
   },
 }

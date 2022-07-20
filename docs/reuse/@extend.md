@@ -3,8 +3,8 @@
 ## 作用
 
 样式设计经常有这样一种情况：
-一个 `class` 拥有另一个 `class` 的所有样式，自身还包含一些特殊样式。
-在 `BEM` 的思想中，会在老的 `class` 后添加修饰符来创建一个新的 `class`，并全部添加到 `HTML` 元素中。
+一个 `class` 拥有另一个 `class` 的所有样式，还额外包含一些样式。
+在 `BEM` 的思想中，会在老的 `class` 后添加修饰符来创建一个新的 `class`，并将两个类全部添加到 `HTML` 元素中。
 这将创建多余的 `HTML`，并将部分 `CSS` 逻辑带入 `HTML`。
 
 ```html
@@ -43,10 +43,6 @@ $selector { ... }
 
 `@extend` 将所有应用到 `$extendee` 的规则应用到 `$extender` 来解决上述问题。
 
-`@extend` 通过将所有 `$selector` 的样式规则应用到 `$selector` 和 `$extender` 合并得到的选择器来实现的。
-
-继承发生在父选择器被编译成具体的选择器之后。
-
 ```scss
 // index.scss
 .error {
@@ -73,7 +69,11 @@ $selector { ... }
 
 ## 智能合并
 
+`@extend` 通过将所有 `$selector` 的样式规则应用到 `$selector` 和 `$extender` 合并得到的选择器来实现继承。
+
 `Sass` 合并 `$selector` 与 `$extender` 的过程非常智能。
+
+继承发生在父选择器被编译成具体的选择器之后。
 
 ### 删除无用选择器
 
@@ -195,15 +195,15 @@ main.content .info, main.content nav.sidebar {
 通过 `@use` 和 `@forward`引用文件，可以继承被引用文件和被递归引用文件中的选择器。
 ，非引用文件中的选择器不可继承。
 
-`A @use B1, C, B1 @use B2, B2 @use B3`。
+`A @use B1, C; B1 @use B2; B2 @use B3`。
 `B1` 可以继承 `B2` 和 `B3` 中的选择器。
 尽管最终 `B1` 和 `C` 的样式会合并到 `A`，但是 `B1` 与 `C` 无引用关系，不能继承。
 
-通过 `@import` 引用，则可以继承所有参与编译的选择器。
+通过 `@import` 引用，则可以继承所有的选择器。
 
 ## 可选
 
-如果找不到对应 `$extendee` 的 `$selector`，编译时将报错。
+如果找不到对应 `$extendee` 的 `$selector`，编译时会报错。
 这能避免拼写错误导致的问题。
 如果不想使用这个特性，在继承后添加 `!optional`
 

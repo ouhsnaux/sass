@@ -1,0 +1,24 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "随着 `css` 文件变大，规则变复杂，越来越难以维护。\r 预编译器就是用来处理这个问题的。",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --open --host localhost",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouhsnaux/sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ouhsnaux/sass/issues"
+  },
+  "homepage": "https://github.com/ouhsnaux/sass#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
